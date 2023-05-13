@@ -1,6 +1,6 @@
 # Diamond Maker
 
-Diamond Maker is a console application written in C# that generates a diamond pattern of letters. Given a letter of the alphabet, it creates a diamond pattern where the given letter represents the widest point of the diamond.
+Diamond Maker is a console application written in C# that generates a diamond pattern of letters. Given a letter of the alphabet, it creates a diamond pattern where the given letter represents the widest point of the diamond. Essentially it solves [this kata](https://github.com/davidwhitney/CodeDojos/tree/master/Diamond%20Kata).
 
 ## Example Output
 
