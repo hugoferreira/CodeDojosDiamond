@@ -18,7 +18,7 @@ C   C
 
 1. **Compilation:**
 
-   - Install [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or later.
+   - Install [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or later (this was tested on .NET Core 7.0.203 on Apple Silicon running MacOS Ventura 13.3.1).
    - Navigate to the project root directory via the command line.
    - Run `dotnet build`.
 
