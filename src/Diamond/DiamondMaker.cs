@@ -1,5 +1,5 @@
 public class DiamondMaker {
-  private static readonly char[] alphabet = Enumerable.Range('A', 26).Select(x => (char) x).ToArray();
+  public static readonly char[] alphabet = Enumerable.Range('A', 26).Select(x => (char) x).ToArray();
 
   public static string GenerateDiamond(char midLetter) {
     // The problem definition doesn't specify what to do with letters outside the

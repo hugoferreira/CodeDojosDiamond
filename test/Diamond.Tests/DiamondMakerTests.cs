@@ -26,4 +26,15 @@ public class DiamondMakerUnitTests {
     string result = DiamondMaker.GenerateDiamond('D');
     Assert.That(result, Is.EqualTo(expected));
   }
+
+  [Test]
+  public void TestInvalidCharacterThrowsException() {
+    var invalidCharacters = Enumerable.Range(0, 255)
+      .Select(i => (char) i)
+      .Where(c => !DiamondMaker.alphabet.Contains(c));
+      
+    foreach (var invalidChar in invalidCharacters) {
+      Assert.Throws<ArgumentException>(() => DiamondMaker.GenerateDiamond(invalidChar));
+    }
+  }
 }
