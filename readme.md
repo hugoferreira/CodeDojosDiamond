@@ -56,16 +56,14 @@ PBT is used to test various properties that should hold true for all possible va
 
 ## Philosophy: What Constitutes a Diamond?
 
-In the context of this program, a diamond is defined as a pattern of letters that is widest at a given character and that decreases in width on either side of this character. The diamond is symmetric both horizontally and vertically. This means that the pattern of letters is the same on the left and right of the vertical center line, as well as above and below the horizontal center line.
-
-The properties captured by PBT reflect this understanding of what constitutes a diamond:
+In the context of this program, a diamond is defined as a pattern of letters that is widest at a given character and that decreases in width on either side of this character. The diamond is symmetric both horizontally and vertically. This means that the pattern of letters is the same on the left and right of the vertical center line, as well as above and below the horizontal center line. The properties captured by PBT reflect this understanding:
 
 - **Symmetry:** The diamond is symmetric vertically and horizontally. This is checked by comparing the sequence of lines in the diamond to its reverse, as well as by checking that each line remains the same when reversed.
 
 - **Letter Positioning:** All diamonds start and end with the letter 'A'.
 
-- **Letter Order:** The upper half of the diamond follows a lexical order, meaning each line's letter is less than the next line's letter. By symmetry, the lower half follows a reversed lexical order.
+- **Letter Order:** The upper half of the diamond follows a lexical order, meaning each line's letter is less than the next line's letter. By symmetry, the lower half follows a reversed lexical order. By induction over the base case ('A'), it should follow that all appropriate letters are displayed.
 
-- **Diagonal Formation:** In the upper-right quarter of the diamond, there is only one letter per line, and these letters form a diagonal. By the two symmetries, the diamond shape is asserted.
+- **Diagonal Formation:** In the upper-left quarter of the diamond, there should be only one letter per line, and these letters form a diagonal. By the two symmetries, the diamond shape is asserted.
 
 These properties, when tested across a wide range of valid inputs, help ensure that the diamond generation logic is working correctly.
