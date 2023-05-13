@@ -25,7 +25,19 @@ C   C
 2. **Testing:**
 
    - Install NUnit Test Adapter extension for your IDE (e.g., [NUnit 3 Test Adapter for Visual Studio](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)).
-   - Run `dotnet test`.
+   - Run `dotnet test`; you should observe something similar to the following output:
+
+```
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Ok, passed 100 tests.
+Ok, passed 100 tests.
+Ok, passed 100 tests.
+Ok, passed 100 tests.
+Ok, passed 100 tests.
+Ok, passed 100 tests.
+Passed!  - Failed:     0, Passed:    11, Skipped:     0, Total:    11, Duration: 84 ms - Diamond.Tests.dll (net7.0)
+```
 
 3. **Running without Publishing:**
 
